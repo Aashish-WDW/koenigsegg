@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koenigsegg</title>
+    <link rel="stylesheet" href="csss/mcstyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Michroma&display=swap">
+</head>
+
+<body class="no-scroll">
+    <header>
+        <nav class="main-nav slide-in">
+            <a href="index.html"><img class="topimg" src="assets/top.png" alt="main"></a>
+            <div class="cats">
+                <a href="mc.html">MORE CARS</a>
+                <a href="tech.html">TECHNOLOGY</a>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="current">CURRENT</h1>
+
+    <div class="prime">
+        <div class="maintex">
+            <h2>Discover our </h2>
+            <h2>legacy models</h2>
+            <div class="btnmain">
+                <button class="btnn slideIn" disabled>V</button>
+            </div>
+        </div>
+
+        <div class="mainimgs">
+            <div class="mainimgs1">
+                <div class="imgzoom">
+                    <h1 class="imgab">CC850</h1>
+                    <img src="assets/1.jpg" alt="Another Image zoom-on-hover effect">
+                </div>
+
+                <div class="imgzoom">
+                    <h1 class="imgab">GEMERA</h1>
+                    <img src="assets/2.png" alt="Another Image zoom-on-hover effect">
+                </div>
+            </div>
+            <div class="mainimgs2">
+                <div class="imgzoom">
+                    <h1 class="imgab">JESKO ABSOLUT</h1>
+                    <img src="assets/3.png" alt="Another Image zoom-on-hover effect">
+                </div>
+
+                <div class="imgzoom">
+                    <h1 class="imgab">JESKO ATTACK</h1>
+                    <img src="assets/4.jpg" alt="Another Image zoom-on-hover effect">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="secmain">
+        <h1 class="current2">LEGACY</h1>
+        <div class="sec">
+            <div class="secimgs">
+                <div class="imgzoom2">
+                    <h1 class="imgab2">REGERA</h1>
+                    <img src="assets/11.jpg" alt="Another Image zoom-on-hover effect">
+                </div>
+
+                <div class="imgzoom2">
+                    <h1 class="imgab2">AGERA RS</h1>
+                    <img src="assets/12.jpg" alt="Another Image zoom-on-hover effect">
+                </div>
+            </div>
+
+            <div class="secimgs">
+                <div class="imgzoom2">
+                    <h1 class="imgab2">ONE:1</h1>
+                    <img src="assets/13.png" alt="Another Image zoom-on-hover effect">
+                </div>
+
+                <div class="imgzoom2">
+                    <h1 class="imgab2">AGERA S</h1>
+                    <img src="assets/14.png" alt="Another Image zoom-on-hover effect">
+                </div>
+            </div>
+
+            <div class="secimgs">
+                <div class="imgzoom2">
+                    <h1 class="imgab2">AGERA</h1>
+                    <img src="assets/15.jpg" alt="Another Image zoom-on-hover effect">
+                </div>
+
+                <div class="imgzoom2">
+                    <h1 class="imgab2">CCXR</h1>
+                    <img src="assets/16.png" alt="Another Image zoom-on-hover effect">
+                </div>
+            </div>
+
+            <div class="secimgs">
+                <div class="imgzoom2">
+                    <h1 class="imgab2">CCX</h1>
+                    <img src="assets/17.jpg" alt="Another Image zoom-on-hover effect">
+                </div>
+
+                <div class="imgzoom2">
+                    <h1 class="imgab2">CCGT</h1>
+                    <img src="assets/18.jpg" alt="Another Image zoom-on-hover effect">
+                </div>
+            </div>
+
+            <div class="secimgs">
+                <div class="imgzoom2">
+                    <h1 class="imgab2">CCR</h1>
+                    <img src="assets/19.jpg" alt="Another Image zoom-on-hover effect">
+                </div>
+
+                <div class="imgzoom2">
+                    <h1 class="imgab2">CC8S</h1>
+                    <img src="assets/20.jpg" alt="Another Image zoom-on-hover effect">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="line">
+        <div class="line3"></div>
+    </div>
+
+    <footer>
+        <div class="fou">
+            <a class="slideOut">THE</a>
+            <a class="slideOut">SHOW</a>
+            <a class="slideOut">MUST</a>
+            <a class="slideOut">GO ON</a>
+        </div>
+
+        <div class="blink">
+            <a href="mc.html">MORE CARS</a>
+            <a href="tech.html">TECHNOLOGY</a>
+            <a>CONTACT US</a>
+        </div>
+    </footer>
+
+    <div class="lol">
+        <div class="quote">
+            <h5>WE DON'T PRAY FOR LOVE, WE JUST PRAY FOR </h5>
+            <h4 class="space">_</h4>
+            <h5 class="red slideOut"> CARS</h5>
+        </div>
+        <div class="comp">
+            <h1>KOENIGSEGG</h1>
+        </div>
+    </div>
+    <div class="line">
+        <div class="line2"></div>
+    </div>
+
+    <script>
+        window.addEventListener('load', function () {
+            document.body.classList.add('loaded');
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const legacyHeading = document.querySelector('.current2');
+
+            const options = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5
+            };
+            const observer = new IntersectionObserver(function (entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        legacyHeading.classList.add('show');
+                    }
+                });
+            }, options);
+
+            observer.observe(legacyHeading);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var slideInElements = document.querySelectorAll('.slideOut');
+            function isInViewport(element) {
+                var rect = element.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            }
+            function handleScroll() {
+                slideInElements.forEach(function (element) {
+                    if (isInViewport(element) && !element.classList.contains('visible')) {
+                        element.classList.add('visible');
+                    }
+                });
+                if (slideInElements.every(function (element) { return element.classList.contains('visible'); })) {
+                    window.removeEventListener('scroll', handleScroll);
+                }
+            }
+            window.addEventListener('scroll', handleScroll);
+            handleScroll();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Michroma', sans-serif;
+}
+
+body {
+    font-family: 'Michroma', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+
+.no-scroll {
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border: none;
+}
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: 16px;
+}
+
+nav {
+    padding: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.fimgg {
+    background-color: #000;
+}
+
+.cats {
+    margin-left: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.cats a::after {
+    content: "";
+    display: block;
+    height: 2px; 
+    background-color: #fff; 
+    transition: transform 0.3s ease;
+    transform-origin: 100% 50%;
+    transform: scaleX(0); 
+    margin-top: 4px;
+}
+
+.cats a:hover::after {
+    transform: scaleX(1); 
+}
+
+
+nav a {
+    color: #fff;
+    font-size: small;
+    padding: 8px;
+    font-family: 'Michroma', sans-serif;
+    font-weight: 800;
+    line-height: 90%;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    text-decoration: none;
+}
+
+
+.topimg {
+    width: 800px;
+}
+
+.topimg2 {
+    width: 600px;
+    animation: slideIn 1.2s ease forwards;
+}
+
+.zoomed {
+    animation: zoomOut 0.5s ease-out;
+    background-color: #000;
+}
+
+.main-nav {
+    display: flex;
+    overflow: hidden;
+    animation-delay: 8s;
+    animation: slideIn 1s ease forwards;
+}
+
+.slide-in {
+    animation: slideIn 1.2s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomOut {
+    from {
+        transform: scale(1.2);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+main {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.one a {
+    font-weight: bold;
+    color: #fff;
+}
+
+.one {
+    padding: 160px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+.one .tex {
+    width: 500px;
+    padding-right: 60px;
+}
+
+.one .tex h5 {
+    color: #fff;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+.dimg {
+    width: 800px;
+    height: auto;
+}
+
+.btnmain {
+    padding-top: 50px;
+}
+
+.btnn {
+    padding: 10px;
+    font-family: 'Michroma', sans-serif;
+    background-color: transparent;
+    color: grey;
+    border: 1px solid grey;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.two {
+    background-color: #fff;
+    padding: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.two2 {
+    margin-left: auto;
+}
+
+.two2 a {
+    color: #000;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.two a {
+    color: #000;
+    font-weight: bold;
+}
+
+.twotex h1 {
+    font-weight: bold;
+}
+
+.twotex2 {
+    display: flex;
+}
+
+.twotex2 h2 {
+    color: #fff;
+}
+
+.two1 {
+    padding-left: 80px;
+}
+
+.twotex3 h5 {
+    color: #000;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+.twotex3 {
+    width: 400px;
+}
+
+.the {
+    background-color: #fff;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 120px;
+    display: flex;
+}
+
+.the .tex2 h5 {
+    color: #000;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+.tex2 {
+    padding-right: 400px;
+    width: 800px;
+}
+
+.tex2 a {
+    color: #000;
+    font-weight: bold;
+}
+
+.dimg2 {
+    width: 400px;
+}
+
+.line {
+    border: 1px solid gray;
+    margin: 160px;
+    background-color: #fff;
+}
+
+.line2 {
+    border: 1px solid gray;
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-bottom: 60px;
+    background-color: #fff;
+}
+
+.fou {
+    height: 500px;
+    background-color: #fff;
+}
+
+.fou a {
+    font-weight: bold;
+    font-size: 62px;
+    display: block;
+}
+
+
+.blink a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.lol{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comp{
+    justify-content: center;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 20px;
+    color: red;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 160px;
+    padding-right: 160px;
+    background-color: #fff;
+}
+
+.quote {
+    padding-left: 160px;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.quote .red {
+    color: red;
+}
+
+.quote h5 {
+    color: gray;
+}
+
+.space {
+    color: #fff;
+}
+
+.image-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.m2-masked-image {
+    transform: translateX(-100%);
+    transition: transform 0.8s ease-in-out;
+    animation: revealFromTop 0.8s ease-in-out; 
+}
+
+.m2-masked-image.visible {
+    transform: translateX(0);
+}
+
+.m2-masked-image2 {
+    transform: translateX(-100%);
+    transition: transform 0.8s ease-in-out;
+    animation: revealFromTop 0.8s ease-in-out; 
+}
+
+.m2-masked-image.visible2 {
+    transform: translateX(0);
+}
+
+@keyframes revealFromTop {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slideIn {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@keyframes revealFromTop2 {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.pimg {
+    overflow: hidden;
+    position: relative;
+    width: 400px;
+    height: auto;
+}
+
+.pimg img {
+    transform: translateX(-100%);
+    transition: transform 0.8s ease-in-out;
+    animation: revealFromTop2 0.8s ease-in-out; 
+}
+
+.pimg img.visible {
+    transform: translateX(0) !important; 
+}
+
+@keyframes revealFromTop2 {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slideIn2 {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.slideIn2.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slideIn3 {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.slideIn3.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slideOut, .slideOut2{
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.slideOut.visible ,.slideOut2.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.dimg2 {
+    overflow: hidden;
+    position: relative;
+    width: 400px;
+    height: auto;
+}
+
+.dimg2 img {
+    transform: translateX(-100%);
+    transition: transform 0.8s ease-in-out;
+    animation: revealFromTop3 0.8s ease-in-out; 
+}
+
+.dimg2 img.visible {
+    transform: translateX(0) !important; 
+}
+
+@keyframes revealFromTop3 {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.line {
+    background-color: #fff;
+}
+
+.line3 {
+    border: 1px solid gray;
+    background-color: #fff;
+}
+
+
+.bottom{
+background-color: #fff;
+}
